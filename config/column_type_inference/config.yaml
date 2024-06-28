@@ -1,0 +1,81 @@
+defaults:
+  - dataset: ~
+  - _self_
+
+task_name: "column_type_inference"
+exp_name: ???
+
+# task-specific configuration goes here
+
+###############
+# preprocessing
+###############
+
+limit_instances: null
+
+##################
+# prepare requests
+##################
+
+use_inst_all_column_types: false
+num_inst_all_column_types: 500
+
+remove_unspecified_columns_in_example: true
+unspecified_column_type_string: "unspecified"
+
+limit_example_columns: 20  # null means don't limit
+
+linearize_table:
+  template: "{{table_name}}{{newline}}{{table}}"  # can include {{newline}}, {{table_name}}, and {{table}}
+  mode: "csv"
+  csv_params:
+    index: false
+    header: true
+  markdown_params:
+    index: false
+
+linearize_list:
+  mode: "json_list"
+  sep: ","
+  strip: true
+
+# template can include {{all_column_types}} {{examples}} {{table}}
+prompt_chat_template:
+  - role: "user"
+    content: |-
+      Predict the column types of the following tables. Provide just the column types as a JSON list without any introduction or explanation.
+      Column types are: {{all_column_types}}
+  - "{{examples}}"
+  - role: "user"
+    content: "{{table}}"
+
+# template can include {{table}} {{column_types}}
+example_chat_template:
+  - role: "user"
+    content: "{{table}}"
+  - role: "assistant"
+    content: "{{column_types}}"
+
+sample_rows:
+  num_rows: 3
+
+sample_examples:
+  num_examples: 1
+
+max_tokens_over_ground_truth: 100  # null means max_tokens will be set to null
+model: ???
+temperature: 0
+
+##################
+# execute requests
+##################
+
+api_name: ???
+
+
+############
+# evaluation
+############
+
+adjust_missing_columns_up_to: 2
+bucketize_sparsity_decimal_points: 1

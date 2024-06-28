@@ -1,0 +1,1 @@
+{"number of tables": 100, "tables per database": null, "mean columns per table": 83.33, "median columns per table": 46.0, "95th columns per table": 341.2, "mean rows per table": 8300793.41, "median rows per table": 384320.0, "95th rows per table": 43758473.2, "sparsity": 0.4250583007409343, "non-numerical columns": 0.8628410620335251, "numerical columns": 0.137158937966475}

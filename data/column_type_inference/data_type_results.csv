@@ -1,0 +1,11 @@
+,"('gittablesCTA', 'non-num')","('gittablesCTA', 'num')","('sapdata', 'non-num')","('sapdata', 'num')","('sotab', 'non-num')","('sotab', 'num')","('sportstables', 'non-num')","('sportstables', 'num')","('wikitables-turl', 'non-num')","('wikitables-turl', 'num')"
+gpt-3.5-turbo-1106-with-headers,0.84,0.8,,,,,0.76,0.6,,
+gpt-3.5-turbo-1106-without-headers,0.5,0.3,,,,,0.58,0.28,,
+gpt-35-turbo-1106-with-headers,,,0.09,0.05,,,,,,
+gpt-35-turbo-1106-without-headers,,,0.02,0.01,,,,,,
+gpt-4-0613-with-headers,0.98,0.98,0.18,0.15,,,0.91,0.9,,
+gpt-4-0613-without-headers,0.66,0.43,0.03,0.01,,,0.8,0.54,,
+sampled-columns-gpt-35-turbo-1106-with-headers,,,0.16,0.09,,,,,,
+sampled-columns-gpt-35-turbo-1106-without-headers,,,0.02,0.01,,,,,,
+sparsity-gpt-35-turbo-1106-with-headers,,,0.31,0.13,,,,,,
+sparsity-gpt-35-turbo-1106-without-headers,,,0.03,0.01,,,,,,
