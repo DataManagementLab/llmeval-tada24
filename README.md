@@ -9,7 +9,24 @@ the data characteristics affect the LLMs' accuracy and find that LLMs have sever
 enterprise data. Based on these findings, we point towards promising directions for adapting LLMs to the enterprise
 context.**
 
-Please check out our [paper](https://tabular-data-analysis.github.io/tada2024/papers/TaDA.4.pdf)!
+Please check out our [paper](https://vldb.org/workshops/2024/proceedings/TaDA/TaDA.4.pdf) and cite our work:
+
+```bibtex
+@inproceedings{DBLP:conf/vldb/BodensohnBVUSB24,
+  author       = {Jan{-}Micha Bodensohn and
+                  Ulf Brackmann and
+                  Liane Vogel and
+                  Matthias Urban and
+                  Anupam Sanghi and
+                  Carsten Binnig},
+  title        = {LLMs for Data Engineering on Enterprise Data},
+  booktitle    = {Proceedings of Workshops at the 50th International Conference on Very
+                  Large Data Bases, {VLDB} 2024, Guangzhou, China, August 26-30, 2024},
+  publisher    = {VLDB.org},
+  year         = {2024},
+  url          = {https://vldb.org/workshops/2024/proceedings/TaDA/TaDA.4.pdf}
+}
+```
 
 ## Setup
 
